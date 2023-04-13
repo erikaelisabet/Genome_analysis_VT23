@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2023-2-8
+#SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 1
 #SBATCH -t 00:20:00
@@ -11,10 +12,9 @@ module load bioinfo-tools
 module load quast 
 
 #variables 
-OUTPUT=/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass
-INPUT= <all contigs from assembly?>
-REF= <reference genome>
+OUTPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/quast_out"
+INPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/canu_out/LFerriphilum.contigs.fasta"
+REFERENCE="/home/erikali/Genome_analysis_VT23/data/raw_data/reference/OBMB01.fasta"
 
 # Your commands
-
-quast.py INPUT -p quast_LFerriphilum -R REF -o OUTPUT
+quast.py $INPUT -R $REFERENCE -o $OUTPUT
