@@ -1,0 +1,60 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [ENA_OBMB01000001_OBMB01000001.1]
+	Loaded [ENA_OBMB01000002_OBMB01000002.1]
+	Total Regions: 2
+	Total Region Length: 2610531
+Analyzing contigs...
+CONTIG: tig00000002 (49619bp)
+		This contig is unaligned. (49619 bp)
+		Unaligned bases: 49619 (number of Ns: 0)
+
+CONTIG: tig00000003 (2565990bp)
+Best alignment score: 1571507.8 (LEN: 1571665, IDY: 99.99), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 2565233.4, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 22356 between Alignment 1 and 2: 1552587 2569357 | 2565990 1549310 | 1016771 1016681 --> 1552587 2547009 | 2565990 1571666 | 994423 994325
+			Real Alignment 1: 1 1571820 | 1571665 1 | 1571820 1571665 | 99.99 | ENA_OBMB01000001_OBMB01000001.1 tig00000003
+			  Extensive misassembly (relocation, inconsistency = -2547009) between these two alignments
+			Real Alignment 2: 1552587 2547009 | 2565990 1571666 | 994423 994325 | 99.99 | ENA_OBMB01000001_OBMB01000001.1 tig00000003
+
+CONTIG: tig00000004 (20477bp)
+Best alignment score: 20405.3 (LEN: 20477, IDY: 99.65), Total number of alignments: 1
+		One align captures most of this contig: 1551759 1572294 | 20477 1 | 20536 20477 | 99.65 | ENA_OBMB01000001_OBMB01000001.1 tig00000004
+
+Analyzing coverage...
+Writing SNPs into /home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/quast_out/contigs_reports/minimap_output/LFerriphilum-contigs.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/quast_out/contigs_reports/minimap_output/LFerriphilum-contigs.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 1
+		Relocations: 1
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 1
+	Misassembled Contig Bases: 2565990
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 1 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 49619
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 2547009
+
+	SNPs: 4
+	Insertions: 21
+	Deletions: 333
+
