@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2023-2-8
+#SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 1
 #SBATCH -t 00:20:00
@@ -12,22 +13,22 @@ module load bioinfo-tools
 module load MUMmer
 
 #variables
-OUTPUT=/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass
-INPUT= <all contigs from assembly?>
-REF= <reference genome>
-OUTFILE=<path to outfile> 
+OUTPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/mumer_out"
+INPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/canu_out/LFerriphilum.contigs.fasta"
+REFERENCE="/home/erikali/Genome_analysis_VT23/data/raw_data/reference/OBMB01.fasta"
 
 # Your commands
 
-mummer -mum -b -c $REF $INPUT > $OUTFILE/<filename>
+mummer -mum -b -c $REFERENCE $INPUT > $OUTPUT/mumer_file.mums
 
-cd $OUTFILE
+
+cd $OUTPUT
 
 mummerplot \
 -Q $INPUT \
--R $REF \
-$MUMS/lferriphilum.mums \
---png --prefix=lferriphilum
+-R $REFERENCE \
+$OUTPUT/mumer_file.mums \
+-p mumer_file --png
 
-gnuplot lferriphilum.gp
+gnuplot mumer_file.gp
 
