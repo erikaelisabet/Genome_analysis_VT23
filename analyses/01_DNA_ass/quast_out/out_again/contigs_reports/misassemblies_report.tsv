@@ -14,8 +14,8 @@ Misassembled contigs length	2565990
 # scaffold gap ext. mis.	0
 # scaffold gap loc. mis.	0
 # unaligned mis. contigs	0
-# mismatches	4
-# indels	342
-    # indels (<= 5 bp)	342
+# mismatches	0
+# indels	285
+    # indels (<= 5 bp)	285
     # indels (> 5 bp)	0
-Indels length	354
+Indels length	287

@@ -12,4 +12,4 @@ partial gene/operon min size: 100
 assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
                          | fraction  | ratio       | number    |           | genes     |           | operons   |
 ========================================================================================================================
-LFerriphilum_contigs     | 97.567    | 1.015       | 2         | -         | -         | -         | -         |
+LFerriphilum_contigs     | 97.567    | 1.007       | 2         | -         | -         | -         | -         |
