@@ -1,0 +1,53 @@
+All statistics are based on contigs of size >= 20000 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                     LFerriphilum.contigs
+# contigs (>= 0 bp)          3                   
+# contigs (>= 1000 bp)       3                   
+# contigs (>= 5000 bp)       3                   
+# contigs (>= 10000 bp)      3                   
+# contigs (>= 25000 bp)      2                   
+# contigs (>= 50000 bp)      1                   
+Total length (>= 0 bp)       2636086             
+Total length (>= 1000 bp)    2636086             
+Total length (>= 5000 bp)    2636086             
+Total length (>= 10000 bp)   2636086             
+Total length (>= 25000 bp)   2615609             
+Total length (>= 50000 bp)   2565990             
+# contigs                    3                   
+Largest contig               2565990             
+Total length                 2636086             
+Reference length             2610531             
+GC (%)                       54.10               
+Reference GC (%)             54.14               
+N50                          2565990             
+NG50                         2565990             
+N75                          2565990             
+NG75                         2565990             
+L50                          1                   
+LG50                         1                   
+L75                          1                   
+LG75                         1                   
+# misassemblies              1                   
+# misassembled contigs       1                   
+Misassembled contigs length  2565990             
+# local misassemblies        0                   
+# scaffold gap ext. mis.     0                   
+# scaffold gap loc. mis.     0                   
+# unaligned mis. contigs     0                   
+# unaligned contigs          1 + 0 part          
+Unaligned length             49619               
+Genome fraction (%)          97.567              
+Duplication ratio            1.015               
+# N's per 100 kbp            0.00                
+# mismatches per 100 kbp     0.16                
+# indels per 100 kbp         13.43               
+Largest alignment            1571665             
+Total aligned length         2586467             
+NA50                         1571665             
+NGA50                        1571665             
+NA75                         994325              
+NGA75                        994325              
+LA50                         1                   
+LGA50                        1                   
+LA75                         2                   
+LGA75                        2                   

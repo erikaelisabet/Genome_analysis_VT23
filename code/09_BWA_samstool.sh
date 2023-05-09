@@ -14,9 +14,9 @@ module load bwa
 module load samtools
 
 # variables
-REFERENCE="/home/erikali/Genome_analysis_VT23/data/raw_data/reference/OBMB01.fasta"
+REFERENCE="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/canu_out/LFerriphilum.contigs.fasta"
 INPUTRNAPATH="/home/erikali/Genome_analysis_VT23/data/raw_data/RNA_trimmed_reads"
-OUTPUT="/home/erikali/Genome_analysis_VT23/analyses/04_RNA_mapping"
+OUTPUT="/proj/genomeanalysis2023/nobackup/work/erikalindberg"
 SEQUENCES="ERR2036629 ERR2036630 ERR2036631 ERR2036632 ERR2036633 ERR2117288 ERR2117289 ERR2117290 ERR2117291 ERR2117292"
 
 $SNIC_TMP

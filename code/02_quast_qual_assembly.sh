@@ -12,9 +12,9 @@ module load bioinfo-tools
 module load quast 
 
 #variables 
-OUTPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/quast_out"
+OUTPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/quast_out/out_again"
 INPUT="/home/erikali/Genome_analysis_VT23/analyses/01_DNA_ass/canu_out/LFerriphilum.contigs.fasta"
 REFERENCE="/home/erikali/Genome_analysis_VT23/data/raw_data/reference/OBMB01.fasta"
 
 # Your commands
-quast.py $INPUT -R $REFERENCE -o $OUTPUT
+quast.py $INPUT -R $REFERENCE --min-contig 20000 -o $OUTPUT
