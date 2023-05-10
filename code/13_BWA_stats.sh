@@ -26,7 +26,7 @@ for F in $SEQUENCES
 do
 (
 gunzip -c $INPUT/${F}_mapped_RNA.sorted.bam.gz > $SNIC_TMP/${F}_mapped_RNA.sorted.bam
-samtools stats -O tsv $SNIC_TMP/${F}_mapped_RNA.sorted.bam > $SNIC_TMP/${F}.stat
+samtools stats $SNIC_TMP/${F}_mapped_RNA.sorted.bam > $SNIC_TMP/${F}.stat
 ) &
 done
 wait 
